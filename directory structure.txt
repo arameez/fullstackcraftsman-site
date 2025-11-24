@@ -1,0 +1,10 @@
+/root
+  |– index.html
+  |– about.html
+  |– courses.html
+  |– trainer.html
+  |– contact.html
+  |– assets/
+        |– styles.css
+        |– logo.png
+        |– poster.png

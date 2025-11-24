@@ -1,0 +1,67 @@
+/* Global Theme based on your poster */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #0A2A43;
+}
+
+header {
+    background: #0A2A43;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    height: 90px;
+}
+
+nav {
+    background: #E8A723;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #0A2A43;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 2px solid #0A2A43;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #0A2A43;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #0A2A43;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    background: #0A2A43;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
