@@ -2,7 +2,7 @@ body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#fff;color:#0A2
 .top-header{background:#0A2A43;color:#fff;padding-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .header-container{display:flex;align-items:center;padding:15px 20px}
 .logo{height:80px;margin-right:20px;border-radius:8px}
-.title-block h1{margin:0;font-size:26px;font-weight:800}
+.title-block h1{margin:0;font-size:26px;color:#E8A723;font-weight:800}
 .title-block p{margin:2px 0 0;font-size:15px;color:#E8A723;font-weight:700}
 .navbar{background:#E8A723;padding:10px;text-align:center}
 .navbar a{text-decoration:none;color:#0A2A43;font-weight:700;font-size:18px;margin:0 18px;transition:.2s}
