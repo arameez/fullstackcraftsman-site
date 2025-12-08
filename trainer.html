@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Trainer Profile</title>
+    <title>FullStack Craftsman Institute</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
 
-<header>
-    <img src="assets/logo.png">
-    <h1>Trainer Profile</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="trainer.html">Trainer</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<div id="header"></div>
 
 <div class="container card">
-    <h2>Abdur Rahim</h2>
+    <h2>Abdur Rameez — Founder & Lead Trainer</h2>
     <p>
-        Senior Industry Expert with 14+ years of experience across leading MNCs.  
-        Specialized in Java, Spring Boot, Microservices, DevOps, Cloud, and Full-Stack Engineering.
+        Senior Industry Expert with <strong>14+ years</strong> of total experience across top MNCs, specializing in 
+        <strong>Java, Spring Boot, Microservices, DevOps, Cloud, React.js, and Full-Stack Engineering</strong>.
     </p>
-    <p>Trained 1000+ students in career-oriented development and DevOps skills.</p>
+
+    <ul>
+        <li>Expert in architecting and implementing scalable, cloud-native microservices applications.</li>
+        <li>Strong hands-on experience with Java Fullstack, AWS, Kubernetes, Docker, CI/CD & Automation.</li>
+        <li>Delivered corporate training sessions for teams across multiple global companies.</li>
+        <li>Passionate about skill-building, real-time projects, interview prep & career mentoring.</li>
+        <li>Focus on practical, industry-level use cases instead of theory-based learning.</li>
+        <li>Guides students on end-to-end architecture, DevOps pipelines & cloud deployment strategies.</li>
+    </ul>
+
+    <p>
+        <a href="https://www.linkedin.com/in/abdur-rameez-78718248/" 
+           target="_blank"
+           style="color:#0A2A43;font-weight:bold;text-decoration:underline;">
+           Connect on LinkedIn
+        </a>
+    </p>
 </div>
 
-<footer>
-    © 2025 FullStack Craftsman Institute
-</footer>
+
+<div id="footer"></div>
+<script>
+    fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 
 </body>
 </html>

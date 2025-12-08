@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Courses</title>
+    <title>FullStack Craftsman Institute</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<header>
-    <img src="assets/logo.png">
-    <h1>Courses</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="trainer.html">Trainer</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<div id="header"></div>
 
 <div class="container">
 
     <div class="card">
         <h2>Java Full Stack Development</h2>
         <ul>
-            <li>Core Java + OOP + Collections</li>
-            <li>Spring Boot + Microservices</li>
+            <li>Core Java + OOP + Collections + Multithreading & Concurrency</li>
+            <li>Spring Boot + Microservices + Kafka + Redis</li>
+			<li>REST API Design + OpenAPI/Swagger Documentation</li>
             <li>PostgreSQL & MongoDB</li>
             <li>React + HTML + CSS + JS</li>
+			<li>Design Patterns & Clean Code Principles</li>
+			<li>Spring Security Authentication & JWT</li>
+			<li>Unit Testing with JUnit & Mockito</li>
             <li>Real-time Projects</li>
+			<li>Assessments</li>
+			<li>Interview Preparation</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>DevOps Engineering</h2>
         <ul>
+		    <li>Linux Commands & Shell Scripting</li>
             <li>Git, GitHub, GitLab</li>
-            <li>Docker, Kubernetes</li>
-            <li>Jenkins CI/CD Pipelines</li>
-            <li>AWS Cloud Deployment</li>
-            <li>Monitoring: Grafana, Prometheus, Loki</li>
+			<li>CI/CD Pipelines</li>
+			<li>Docker</li>
+            <li>Helm Charts & Kubernetes Deployments</li>
+            <li>AWS EC2, S3, VPC, DynamoDB, RDS</li>
+			<li>AWS Cloud Deployments</li>
+            <li>Monitoring: Grafana, Prometheus, Loki, CloudWatch</li>
+			<li>Real-time Projects</li>
+			<li>Assessments</li>
+			<li>Interview Preparation</li>
         </ul>
     </div>
 
 </div>
 
-<footer>
-    © 2025 FullStack Craftsman Institute
-</footer>
+<div id="footer"></div>
+<script>
+    fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 
 </body>
 </html>

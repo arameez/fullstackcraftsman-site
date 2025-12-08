@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us</title>
+    <title>FullStack Craftsman Institute</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
 
-<header>
-    <img src="assets/logo.png">
-    <h1>Contact</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="courses.html">Courses</a>
-    <a href="trainer.html">Trainer</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<div id="header"></div>
 
 <div class="container card">
     <h2>Get In Touch</h2>
@@ -27,14 +16,21 @@
 
     <hr>
 
-    <a class="btn" href="https://YOUR_GOOGLE_FORM_URL" target="_blank">
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeIk3_pqEBhLnVi0MEw2S0w4j43SrhV79XaQA3atePRGPPpUQ/viewform?usp=sharing&ouid=105507523165208150210" target="_blank">
         Register for Training
     </a>
 </div>
 
-<footer>
-    © 2025 FullStack Craftsman Institute
-</footer>
+<div id="footer"></div>
+<script>
+    fetch("header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 
 </body>
 </html>
